@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Social from "./Social";
 
 const HeroSection = () => {
   return (
@@ -41,21 +42,25 @@ const HeroSection = () => {
             sint, porro nisi ex quo debitis nemo eius rerum aut ratione aliquid
             iste dicta corrupti eos facere officia asperiores amet saepe.
           </p>
-          <div>
-            <Link
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            {/* <Link
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 via-yellow-400 to-pink-500 hover:bg-slate-200 text-white"
             >
               Hire Me
-            </Link>
+            </Link> */}
             <Link
               href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-500 via-yellow-400 to-pink-500 hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-[300px] text-center rounded-full bg-gradient-to-br from-green-500 via-yellow-400 to-pink-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
             </Link>
+            <div className="flex flex-row mt-2 justify-center items-center gap-7">
+              <Social></Social>
+            </div>
+            <div className="text-white mb-8 xl:mb-0"></div>
           </div>
         </motion.div>
         <motion.div

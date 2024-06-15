@@ -13,37 +13,37 @@ import { Section } from "lucide-react";
 import { link } from "fs";
 import Image from "next/image";
 
-const about = {
-  title: "About me",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui maiores deserunt illo, voluptatum porro illum error voluptates esse repellat quae est veritatis sed dignissimos quam non ipsam. Modi, sint!",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Soyeon Kim",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "0434 400 656",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "6 Months",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "South Korea",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "haikyu5123@gmail.com",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Korean",
-    },
-  ],
-};
+// const about = {
+//   title: "About me",
+//   description:
+//     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui maiores deserunt illo, voluptatum porro illum error voluptates esse repellat quae est veritatis sed dignissimos quam non ipsam. Modi, sint!",
+//   info: [
+//     {
+//       fieldName: "Name",
+//       fieldValue: "Soyeon Kim",
+//     },
+//     {
+//       fieldName: "Phone",
+//       fieldValue: "0434 400 656",
+//     },
+//     {
+//       fieldName: "Experience",
+//       fieldValue: "6 Months",
+//     },
+//     {
+//       fieldName: "Nationality",
+//       fieldValue: "South Korea",
+//     },
+//     {
+//       fieldName: "Email",
+//       fieldValue: "haikyu5123@gmail.com",
+//     },
+//     {
+//       fieldName: "Languages",
+//       fieldValue: "English, Korean",
+//     },
+//   ],
+// };
 
 const experience = {
   icon: "/badge.svg",
@@ -122,7 +122,7 @@ const Skills = {
 
 const Resume = () => {
   return (
-    <section id="about" className="mt-60 md:mt-60">
+    <section>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -140,7 +140,7 @@ const Resume = () => {
               <TabsTrigger value={"experience"}>Experience</TabsTrigger>
               <TabsTrigger value={"education"}>Education</TabsTrigger>
               <TabsTrigger value={"skills"}>Skills</TabsTrigger>
-              <TabsTrigger value={"about"}>About me</TabsTrigger>
+              {/* <TabsTrigger value={"about"}>About me</TabsTrigger> */}
             </TabsList>
             <div className="min-h-[70vh] w-full">
               <TabsContent value="experience" className="w-full text-white">
@@ -242,7 +242,7 @@ const Resume = () => {
                   </ul>
                 </div>
               </TabsContent>
-              <TabsContent
+              {/* <TabsContent
                 value="about"
                 className="w-full text-white text-center xl:text-left"
               >
@@ -267,7 +267,7 @@ const Resume = () => {
                     })}
                   </ul>
                 </div>
-              </TabsContent>
+              </TabsContent> */}
             </div>
           </Tabs>
         </div>
