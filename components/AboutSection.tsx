@@ -83,10 +83,26 @@ const AboutSection = () => {
           <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-base md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              eaque ratione maxime quo natus? Repellendus quam eius laborum
-              saepe voluptatum accusantium autem blanditiis suscipit placeat,
-              iste velit, quibusdam nesciunt. Nemo.
+              I'm Soyeon Kim, currently in my third year of Software Engineering
+              at Curtin University. Over the past three years, I've learned
+              Python, C, Java, MySQL, and data structures and algorithms,
+              completing various school assignments with these technologies.
+            </p>
+            <br />
+            <p className="text-base md:text-lg">
+              During my recent vacation, I took the initiative to learn
+              TypeScript and React by working on self-directed projects.
+              Additionally, I gained valuable experience in PHP and Laravel
+              during an internship at Sustech Engineering Company. After my
+              internship, I continued working there as a casual employee, which
+              allowed me to further develop my skills and understand how to
+              collaborate effectively within a team.
+            </p>
+            <br />
+            <p className="text-base md:text-lg">
+              Looking ahead, I aim to keep learning and growing in software
+              engineering. My goal is to acquire advanced skills and expertise,
+              leading to a fulfilling career in the industry.
             </p>
             {/* <div className="flex flex-row justify-start mt-8">
             <TabButton

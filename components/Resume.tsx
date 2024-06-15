@@ -13,58 +13,68 @@ import { Section } from "lucide-react";
 import { link } from "fs";
 import Image from "next/image";
 
-// const about = {
-//   title: "About me",
-//   description:
-//     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui maiores deserunt illo, voluptatum porro illum error voluptates esse repellat quae est veritatis sed dignissimos quam non ipsam. Modi, sint!",
-//   info: [
-//     {
-//       fieldName: "Name",
-//       fieldValue: "Soyeon Kim",
-//     },
-//     {
-//       fieldName: "Phone",
-//       fieldValue: "0434 400 656",
-//     },
-//     {
-//       fieldName: "Experience",
-//       fieldValue: "6 Months",
-//     },
-//     {
-//       fieldName: "Nationality",
-//       fieldValue: "South Korea",
-//     },
-//     {
-//       fieldName: "Email",
-//       fieldValue: "haikyu5123@gmail.com",
-//     },
-//     {
-//       fieldName: "Languages",
-//       fieldValue: "English, Korean",
-//     },
-//   ],
-// };
+const about = {
+  title: "About me",
+  description:
+    "I have six months of experience in my field. I am from South Korea and speak both English and Korean. I am dedicated to my work and always eager to learn and improve.",
+  info: [
+    {
+      fieldName: "Name",
+      fieldValue: "Soyeon Kim",
+    },
+    {
+      fieldName: "Phone",
+      fieldValue: "0434 400 656",
+    },
+    {
+      fieldName: "Experience",
+      fieldValue: "6 Months",
+    },
+    {
+      fieldName: "Nationality",
+      fieldValue: "South Korea",
+    },
+    {
+      fieldName: "Email",
+      fieldValue: "haikyu5123@gmail.com",
+    },
+    {
+      fieldName: "Languages",
+      fieldValue: "English, Korean",
+    },
+  ],
+};
 
 const experience = {
   icon: "/badge.svg",
   title: "My Experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui maiores deserunt illo, voluptatum porro illum error voluptates esse repellat quae est veritatis sed dignissimos quam non ipsam. Modi, sint!",
+    "I have diverse work experience ranging from roles in the food and beverage industry to positions in software engineering. My journey includes working as a barista, sushi maker, and software assistant, giving me a well-rounded skill set and a strong work ethic.",
   items: [
     {
-      company: "Super Tetsudo",
-      position: "Sushi maker",
-      duration: "2020-2022",
+      company: "Coffee code",
+      position: "Barista",
+      duration: "2024.06 - present",
+    },
+    {
+      company: "Sustech Engineering Pty Ltd",
+      position: "Software assistant",
+      duration: "2024.03 - 2024.06",
+    },
+    {
+      company: "Sustech Engineering Pty Ltd",
+      position: "Software Engineer Intern",
+      duration: "2023.12 - 2024.03",
     },
     {
       company: "Gelare",
       position: "Barista",
-      duration: "2022-2024",
+      duration: "2022.12 - 2024.03",
     },
     {
-      company: "Sustech",
-      position: "Intern",
-      duration: "2023-2024",
+      company: "Super Tetsudo",
+      position: "Sushi maker",
+      duration: "2020.05 - 2022.12",
     },
   ],
 };
@@ -73,17 +83,19 @@ const education = {
   icon: "/cap.svg",
   title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui maiores deserunt illo, voluptatum porro illum error voluptates esse repellat quae est veritatis sed dignissimos quam non ipsam. Modi, sint!",
+    "I have pursued my education in the field of IT and software engineering, starting with a Diploma of IT from Curtin College, where I achieved a grade of 85.50. I am currently completing my Bachelor's degree in Software Engineering at Curtin University.",
   items: [
-    {
-      institution: "Curtin College",
-      degree: "Deploma of IT",
-      duration: "2021 -2022",
-    },
     {
       institution: "Curtin University",
       degree: "Bachelor of Software engineering",
-      duration: "2022 -2024",
+      grade: "",
+      duration: "2022 - present",
+    },
+    {
+      institution: "Curtin College",
+      degree: "Deploma of IT",
+      grade: "(Grade: 85.50)",
+      duration: "2021 - 2022",
     },
   ],
 };
@@ -91,7 +103,7 @@ const education = {
 const Skills = {
   title: "My Skill",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui maiores deserunt illo, voluptatum porro illum error voluptates esse repellat quae est veritatis sed dignissimos quam non ipsam. Modi, sint!",
+    "I have developed a strong skill set in web development technologies, including CSS, HTML, JavaScript, TypeScript, React, Tailwind, Next.js and so on. These skills enable me to create responsive and dynamic web applications.",
   skillList: [
     {
       icon: "/css.svg",
@@ -103,7 +115,7 @@ const Skills = {
     },
     {
       icon: "/js.svg",
-      name: "Javascript",
+      name: "JavaScript",
     },
     {
       icon: "/react.svg",
@@ -117,12 +129,28 @@ const Skills = {
       icon: "/next.svg",
       name: "Next",
     },
+    {
+      icon: "/typescript.png",
+      name: "TypeScript",
+    },
+    {
+      icon: "/php.png",
+      name: "PHP",
+    },
+    {
+      icon: "/laravel.png",
+      name: "Laravel",
+    },
+    {
+      icon: "/python.png",
+      name: "Python",
+    },
   ],
 };
 
 const Resume = () => {
   return (
-    <section>
+    <section id="projects" className="mt-60 md:mt-30">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -140,13 +168,13 @@ const Resume = () => {
               <TabsTrigger value={"experience"}>Experience</TabsTrigger>
               <TabsTrigger value={"education"}>Education</TabsTrigger>
               <TabsTrigger value={"skills"}>Skills</TabsTrigger>
-              {/* <TabsTrigger value={"about"}>About me</TabsTrigger> */}
+              <TabsTrigger value={"about"}>About me</TabsTrigger>
             </TabsList>
             <div className="min-h-[70vh] w-full">
               <TabsContent value="experience" className="w-full text-white">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4xl font-bold">{experience.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto-xl:mx-0">
+                  <h3 className="text-4xl font-bold ">{experience.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {experience.description}
                   </p>
                   <ScrollArea className="h-[400px]">
@@ -174,10 +202,10 @@ const Resume = () => {
                   </ScrollArea>
                 </div>
               </TabsContent>
-              <TabsContent value="education" className="w-full text-white">
+              <TabsContent value="education" className="w-full text-white ">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{education.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto-xl:mx-0">
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {education.description}
                   </p>
                   <ScrollArea className="h-[400px]">
@@ -193,6 +221,7 @@ const Resume = () => {
                             </span>
                             <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                               {item.degree}
+                              <p className="text-sm mt-2">{item.grade}</p>
                             </h3>
                             <div className="flex items-center gap-3">
                               <span className="w-[6px] h-[6px] rounded-full bg-yellow-200"></span>
@@ -242,7 +271,7 @@ const Resume = () => {
                   </ul>
                 </div>
               </TabsContent>
-              {/* <TabsContent
+              <TabsContent
                 value="about"
                 className="w-full text-white text-center xl:text-left"
               >
@@ -267,7 +296,7 @@ const Resume = () => {
                     })}
                   </ul>
                 </div>
-              </TabsContent> */}
+              </TabsContent>
             </div>
           </Tabs>
         </div>

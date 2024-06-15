@@ -38,9 +38,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base mb-6 sm:text-lg lg:text-xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
-            sint, porro nisi ex quo debitis nemo eius rerum aut ratione aliquid
-            iste dicta corrupti eos facere officia asperiores amet saepe.
+            Hi, nice to meet you! Want to learn more about me? Feel free to
+            explore my website, where you’ll find all the information about my
+            work and experiences. Enjoy your visit!
           </p>
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* <Link
