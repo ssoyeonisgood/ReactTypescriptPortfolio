@@ -16,7 +16,7 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to bg-pink-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-yellow-400 to-pink-500">
               Hello, I'm{" "}
             </span>
             <br></br>
