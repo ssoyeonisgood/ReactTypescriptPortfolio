@@ -22,9 +22,8 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Soyeon Kim",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000,
                 "Web Developer",
                 1000,
                 "Mobile Developer",
@@ -45,7 +44,7 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 via-yellow-400 to-pink-500 hover:bg-slate-200 text-white"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 via-yellow-400 to-pink-500 hover:bg-slate-200 text-white"
             >
               Hire Me
             </Link>
@@ -65,7 +64,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4  lg:mt-0"
         >
-          <div className="w-[250px] h-[250px] lg:w-[400px] ls:h-[400px] relative rounded-full bg-[#ddbac0] mt-10">
+          <div className="w-[350px] h-[350px] lg:w-[350px] ls:h-[350px] absolute rounded-full mt-10">
             <Image
               src="/ai-image.png"
               alt="ai-charecter"
@@ -74,6 +73,32 @@ const HeroSection = () => {
               height={300}
             ></Image>
           </div>
+          <motion.svg
+            className="w-[350px] h-[400px] lg:w-[350px] ls:h-[400px]"
+            fill="transparent"
+            viewBox="0 0 506 506"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <motion.circle
+              cx="253"
+              cy="253"
+              r="250"
+              stroke="#ddbac0"
+              strokeWidth="8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              initial={{ strokeDasharray: "24 10 0 0" }}
+              animate={{
+                strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
+                rotate: [120, 360],
+              }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            />
+          </motion.svg>
         </motion.div>
       </div>
     </section>
