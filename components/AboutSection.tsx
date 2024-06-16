@@ -83,7 +83,7 @@ const AboutSection = () => {
             height={500}
             className="rounded-3xl"
           />
-          <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+          <div className="mt-4 md:mt-0 flex flex-col h-full text-center sm:text-left">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-base md:text-lg">
               I&apos;m Soyeon Kim, currently in my third year of Software
