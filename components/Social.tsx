@@ -7,16 +7,16 @@ import Image from "next/image";
 
 const socials = [
   {
-    icon: InstagramIcon,
-    path: "https://www.instagram.com/soyeonisgood/",
+    icon: LinkedinIcon,
+    path: "https://www.linkedin.com/in/soyeon-kim-727147251/",
   },
   {
     icon: GithubIcon,
     path: "https://github.com/ssoyeonisgood",
   },
   {
-    icon: LinkedinIcon,
-    path: "https://www.linkedin.com/in/soyeon-kim-727147251/",
+    icon: InstagramIcon,
+    path: "https://www.instagram.com/soyeonisgood/",
   },
 ];
 

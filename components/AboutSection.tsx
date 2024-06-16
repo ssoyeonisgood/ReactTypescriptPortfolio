@@ -63,7 +63,10 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="text-white mt-60 md:mt-60">
+    <section
+      id="about"
+      className="text-white justify-center min-h-[100vh] flex align-middle"
+    >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
