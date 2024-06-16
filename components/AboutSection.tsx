@@ -83,10 +83,11 @@ const AboutSection = () => {
           <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-base md:text-lg">
-              I'm Soyeon Kim, currently in my third year of Software Engineering
-              at Curtin University. Over the past three years, I've learned
-              Python, C, Java, MySQL, and data structures and algorithms,
-              completing various school assignments with these technologies.
+              I&apos;m Soyeon Kim, currently in my third year of Software
+              Engineering at Curtin University. Over the past three years,
+              I&apos;ve learned Python, C, Java, MySQL, and data structures and
+              algorithms, completing various school assignments with these
+              technologies.
             </p>
             <br />
             <p className="text-base md:text-lg">

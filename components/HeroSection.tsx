@@ -18,7 +18,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-yellow-400 to-pink-500">
-              Hello, I'm{" "}
+              Hello, I&apos;m{" "}
             </span>
             <br></br>
             <TypeAnimation
@@ -27,9 +27,9 @@ const HeroSection = () => {
                 1000,
                 "Web Developer",
                 1000,
-                "Mobile Developer",
+                "Frontend Developer",
                 1000,
-                "UI/UX Designer",
+                "Backend Developer",
                 1000,
               ]}
               wrapper="span"

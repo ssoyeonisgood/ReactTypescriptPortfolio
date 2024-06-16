@@ -26,7 +26,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "api/send/rount.js"
+    "app/api/send/route.js"
   ],
   "exclude": ["node_modules"]
 }
