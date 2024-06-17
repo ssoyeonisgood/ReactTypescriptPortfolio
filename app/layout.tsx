@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
+import { PT_Sans } from "next/font/google";
+import { Playpen_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto_init = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400"],
+});
+
+const pt_sans_init = PT_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const playpen_sans_init = Playpen_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Soyeon's Portfolio",
@@ -16,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={playpen_sans_init.className}>{children}</body>
     </html>
   );
 }
