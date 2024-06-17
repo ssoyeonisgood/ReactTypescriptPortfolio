@@ -145,6 +145,10 @@ const Skills = {
       icon: "/python.png",
       name: "Python",
     },
+    {
+      icon: "/mysql.png",
+      name: "MySQL",
+    },
   ],
 };
 
