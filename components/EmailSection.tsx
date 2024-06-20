@@ -1,36 +1,22 @@
 "use client";
 import React, { useState } from "react";
 import Social from "./Social";
+import emailjs from "@emailjs/browser";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e: any) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
 
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
+    emailjs.sendForm(
+      "service_qg0vmg2",
+      "template_gxva8xn",
+      e.currentTarget,
+      "pDib_XSUP38SxAONN"
+    );
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-    console.log(resData);
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
+    setEmailSubmitted(true);
   };
 
   return (
@@ -59,7 +45,7 @@ const EmailSection = () => {
             Email sent successfully!
           </p>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
+          <form className="flex flex-col" onSubmit={sendEmail}>
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -68,7 +54,7 @@ const EmailSection = () => {
                 Your email
               </label>
               <input
-                name="email"
+                name="email_from"
                 type="email"
                 id="email"
                 required
