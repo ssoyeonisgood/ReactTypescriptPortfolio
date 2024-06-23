@@ -17,17 +17,19 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Created a portfolio using React and JavaScript",
-    image: "/reactPortfolio.png",
+    title: "YouTube clone Website",
+    description:
+      "Developed a non-functional YouTube UI clone to practice front-end web development skills",
+    image: "/youtube.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/ssoyeonisgood/Portfolio",
-    previewUrl: "https://ssoyeonisgood.github.io/Portfolio/",
+    gitUrl: "https://github.com/ssoyeonisgood/YouTube",
+    previewUrl: "https://you-tube-clone-ashen.vercel.app/",
   },
   {
     id: 2,
     title: "ToDo list",
-    description: "Created a todo list app using JavaScript",
+    description:
+      "A to-do list app using JavaScript that retains tasks even after page refresh.",
     image: "/todoList.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ssoyeonisgood/ToDoList",
@@ -36,7 +38,8 @@ const projectsData: Project[] = [
   {
     id: 3,
     title: "Recipe App",
-    description: "Created a recipe app using JavaScript",
+    description:
+      "A recipe search app using JavaScript that has bookmarking functionality for easy meal planning.",
     image: "/recipeApp.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ssoyeonisgood/RecipeApp",
@@ -45,7 +48,7 @@ const projectsData: Project[] = [
   {
     id: 4,
     title: "Quiz App",
-    description: "Created a quiz app using JavaScript",
+    description: "A quiz app using JavaScript",
     image: "/quizGame.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ssoyeonisgood/QuizApp",
@@ -54,7 +57,8 @@ const projectsData: Project[] = [
   {
     id: 5,
     title: "Tic-Tac-Toe Game",
-    description: "Team Project with Android studio",
+    description:
+      "A collaborative Tic-Tac-Toe mobile game developed using Android Studio and Java.",
     image: "/tictactoe.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/Terris711/MAD_Assignment1",
@@ -63,20 +67,12 @@ const projectsData: Project[] = [
   {
     id: 6,
     title: "Island Builder",
-    description: "Island Builder using java",
+    description:
+      "An Island Builder mobile game developed with Android Studio and Java, featuring drag-and-drop icon placement, map regeneration, and icon deletion.",
     image: "/islandBuilder.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/ssoyeonisgood/IslandBuilder",
     previewUrl: "/",
-  },
-  {
-    id: 7,
-    title: "Contact App",
-    description: "Contact App using java",
-    image: "/contact.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/ssoyeonisgood/contactApp",
-    previewUrl: "",
   },
 ];
 
