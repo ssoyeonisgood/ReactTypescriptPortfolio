@@ -25,7 +25,13 @@ const Social = () => {
     <>
       {socials.map((item, index) => {
         return (
-          <Link key={index} href={item.path} className="">
+          <Link
+            key={index}
+            href={item.path}
+            target="_blank"
+            rel="noopener noreferrrer"
+            className=""
+          >
             <Image src={item.icon} width={40} height={40} alt="social"></Image>
           </Link>
         );
