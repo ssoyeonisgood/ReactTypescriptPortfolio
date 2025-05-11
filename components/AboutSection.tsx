@@ -77,7 +77,7 @@ const AboutSection = () => {
       >
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
           <Image
-            src="/soyeon2.jpg"
+            src="/PXL_20250204_100122319.JPG"
             alt="about-image"
             width={500}
             height={500}
@@ -86,27 +86,15 @@ const AboutSection = () => {
           <div className="mt-4 md:mt-0 flex flex-col h-full text-center sm:text-left">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-base md:text-lg">
-              I&apos;m Soyeon Kim, currently in my third year of Software
-              Engineering at Curtin University. Over the past three years,
-              I&apos;ve learned Python, C, Java, MySQL, and data structures and
-              algorithms, completing various school assignments with these
-              technologies.
+              I&apos;m Soyeon Kim. I recently graduated with a Bachelor&apos;s in Software Engineering from Curtin University in Febrary this year. During my studies, I built strong skills in software development, database management, and web technologies.
             </p>
             <br />
             <p className="text-base md:text-lg">
-              During my recent vacation, I took the initiative to learn
-              TypeScript and React by working on self-directed projects.
-              Additionally, I gained valuable experience in PHP and Laravel
-              during an internship at Sustech Engineering Company. After my
-              internship, I continued working there as a casual employee, which
-              allowed me to further develop my skills and understand how to
-              collaborate effectively within a team.
+              In 2024, I completed a 6-month internship at Sustech Engineering, where I helped convert Word and Excel forms into web-based formats using PHP and Laravel. This experience strengthened my full-stack development skills and taught me how to work effectively in a team environment. I also created a personal project called Recipe Recommender, an AI web app using Remix, AWS CDK, Rekognition, S3, and AI-SDK, which helped me learn how to integrate APIs and build full-stack applications.
             </p>
             <br />
             <p className="text-base md:text-lg">
-              Looking ahead, I aim to keep learning and growing in software
-              engineering. My goal is to acquire advanced skills and expertise,
-              leading to a fulfilling career in the industry.
+              Outside of tech, I enjoy watching dramas and playing the game TFT. It’s a great way for me to relax. I’m currently watching Breaking Bad, which is a bit of an older drama but still one of the best I’ve seen. The storytelling, character development, and suspense make it incredibly engaging—I highly recommend it if you enjoy intense, well-written shows.
             </p>
             {/* <div className="flex flex-row justify-start mt-8">
             <TabButton

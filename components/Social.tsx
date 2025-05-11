@@ -8,7 +8,7 @@ import Image from "next/image";
 const socials = [
   {
     icon: LinkedinIcon,
-    path: "https://www.linkedin.com/in/soyeon-kim-727147251/",
+    path: "https://www.linkedin.com/in/soyeonkim0223/",
   },
   {
     icon: GithubIcon,

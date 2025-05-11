@@ -17,13 +17,13 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "YouTube clone Website",
+    title: "Recipe Recommender",
     description:
-      "Developed a non-functional YouTube UI clone to practice front-end web development skills",
-    image: "/youtube.png",
+      "An AI web app that recommends recipes based on user-uploaded images, built with Remix, AWS CDK, Rekognition, S3, and AI-SDK.",
+    image: "/recipeRecommender.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/ssoyeonisgood/YouTube",
-    previewUrl: "https://you-tube-clone-ashen.vercel.app/",
+    gitUrl: "https://github.com/ssoyeonisgood/recipe-recommender-remix",
+    previewUrl: "https://recipe-reco.netlify.app/",
   },
   {
     id: 2,
@@ -73,6 +73,16 @@ const projectsData: Project[] = [
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/ssoyeonisgood/IslandBuilder",
     previewUrl: "/",
+  },
+  {
+    id: 7,
+    title: "YouTube clone Website",
+    description:
+      "Developed a non-functional YouTube UI clone to practice front-end web development skills",
+    image: "/youtube.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ssoyeonisgood/YouTube",
+    previewUrl: "https://you-tube-clone-ashen.vercel.app/",
   },
 ];
 

@@ -52,9 +52,14 @@ const experience = {
     "I have diverse work experience ranging from roles in the food and beverage industry to positions in software engineering. My journey includes working as a barista, sushi maker, and software assistant, giving me a well-rounded skill set and a strong work ethic.",
   items: [
     {
+      company: "GT Engineering",
+      position: "Office Administrator",
+      duration: "2024.08 - Present",
+    },
+    {
       company: "Coffee code",
       position: "Barista",
-      duration: "2024.06 - present",
+      duration: "2024.06 - 2024.08",
     },
     {
       company: "Sustech Engineering Pty Ltd",
@@ -89,7 +94,7 @@ const education = {
       institution: "Curtin University",
       degree: "Bachelor of Software engineering",
       grade: "",
-      duration: "2022 - present",
+      duration: "2022 - 2024",
     },
     {
       institution: "Curtin College",
@@ -105,6 +110,10 @@ const Skills = {
   description:
     "I have developed a strong skill set in web development technologies, including CSS, HTML, JavaScript, TypeScript, React, Tailwind, Next.js and so on. These skills enable me to create responsive and dynamic web applications.",
   skillList: [
+    {
+      icon: "/aws.png",
+      name: "AWS",
+    },
     {
       icon: "/css.svg",
       name: "CSS",
