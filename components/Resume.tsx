@@ -98,7 +98,7 @@ const education = {
     },
     {
       institution: "Curtin College",
-      degree: "Deploma of IT",
+      degree: "Diploma of IT",
       grade: "(Grade: 85.50)",
       duration: "2021 - 2022",
     },

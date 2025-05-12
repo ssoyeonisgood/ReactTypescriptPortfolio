@@ -27,13 +27,13 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: "ToDo list",
+    title: "Availability and Enrollment Tracker (Capstone Project)",
     description:
-      "A to-do list app using JavaScript that retains tasks even after page refresh.",
-    image: "/todoList.png",
+      "A web app that tracks course availability and enrollment status, built with React, Javascript, Node.js, Express, and PostpreSQL.",
+    image: "/capstone.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/ssoyeonisgood/ToDoList",
-    previewUrl: "https://ssoyeonisgood.github.io/ToDoList/",
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
     id: 3,
@@ -47,15 +47,6 @@ const projectsData: Project[] = [
   },
   {
     id: 4,
-    title: "Quiz App",
-    description: "A quiz app using JavaScript",
-    image: "/quizGame.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/ssoyeonisgood/QuizApp",
-    previewUrl: "https://ssoyeonisgood.github.io/QuizApp/",
-  },
-  {
-    id: 5,
     title: "Tic-Tac-Toe Game",
     description:
       "A collaborative Tic-Tac-Toe mobile game developed using Android Studio and Java.",
@@ -65,7 +56,7 @@ const projectsData: Project[] = [
     previewUrl: "/",
   },
   {
-    id: 6,
+    id: 5,
     title: "Island Builder",
     description:
       "An Island Builder mobile game developed with Android Studio and Java, featuring drag-and-drop icon placement, map regeneration, and icon deletion.",
@@ -75,7 +66,7 @@ const projectsData: Project[] = [
     previewUrl: "/",
   },
   {
-    id: 7,
+    id: 6,
     title: "YouTube clone Website",
     description:
       "Developed a non-functional YouTube UI clone to practice front-end web development skills",
