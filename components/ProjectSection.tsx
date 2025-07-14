@@ -19,7 +19,7 @@ const projectsData: Project[] = [
     id: 1,
     title: "Recipe Recommender",
     description:
-      "An AI web app that recommends recipes based on user-uploaded images, built with Remix, AWS CDK, Rekognition, S3, and AI-SDK.",
+      "An AI web app that recommends recipes based on user-uploaded images, built with Remix, TypeScript, Vercel AI-CDK, and Tailwind.",
     image: "/recipeRecommender.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ssoyeonisgood/recipe-recommender-remix",
