@@ -99,7 +99,7 @@ const AboutSection = () => {
               development skills and taught me how to work effectively in a team
               environment. I also created a personal project called Recipe
               Recommender, an AI web app using Remix, Typecript, Tailwind and
-              vercel AI-SDK, which helped me learn how to integrate APIs and
+              Vercel AI-SDK, which helped me learn how to integrate APIs and
               build full-stack applications.
             </p>
             <br />
