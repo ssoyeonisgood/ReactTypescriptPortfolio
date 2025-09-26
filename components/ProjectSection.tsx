@@ -92,7 +92,7 @@ const projectsData: Project[] = [
 const ProjectSection: React.FC = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false });
 
   const handleTagChange = (newTag: string) => {
     setTag(newTag);
