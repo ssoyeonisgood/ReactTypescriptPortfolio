@@ -54,7 +54,7 @@ const experience = {
     {
       company: "GT Engineering",
       position: "Office Administrator",
-      duration: "2024.08 - Present",
+      duration: "2024.08 - 2025.02",
     },
     {
       company: "Coffee code",

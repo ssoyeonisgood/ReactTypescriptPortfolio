@@ -33,7 +33,8 @@ const projectsData: Project[] = [
     image: "/capstone.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl:
+      "https://drive.google.com/drive/folders/1N3WLZHC5kn2z_BYL03TsJ5_pV3AY28aF?usp=sharing",
   },
   {
     id: 3,
@@ -74,6 +75,17 @@ const projectsData: Project[] = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ssoyeonisgood/YouTube",
     previewUrl: "https://you-tube-clone-ashen.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Weather Logger",
+    description:
+      "Developed a Python data pipeline to collect real-time weather data using APIs, storing results in CSV for historical tracking.",
+    image: "/weather.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl:
+      "https://drive.google.com/drive/folders/1rFWnGi7ojOdxG5ywVKY-vF9bi2U3mhqS?usp=sharing",
   },
 ];
 
@@ -124,7 +136,7 @@ const ProjectSection: React.FC = () => {
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            transition={{ duration: 0.3, delay: index * 0.1 }}
           >
             <ProjectCard
               key={project.id}

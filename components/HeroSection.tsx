@@ -25,6 +25,8 @@ const HeroSection = () => {
               sequence={[
                 "Soyeon Kim",
                 1000,
+                "Graduate Software Developer",
+                1000,
                 "Web Developer",
                 1000,
                 "Frontend Developer",
