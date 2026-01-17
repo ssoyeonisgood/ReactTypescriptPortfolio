@@ -83,9 +83,20 @@ const projectsData: Project[] = [
       "Developed a Python data pipeline to collect real-time weather data using APIs, storing results in CSV for historical tracking.",
     image: "/weather.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl:
+      "https://drive.google.com/drive/folders/1rFWnGi7ojOdxG5ywVKY-vF9bi2U3mhqS?usp=sharing",
     previewUrl:
       "https://drive.google.com/drive/folders/1rFWnGi7ojOdxG5ywVKY-vF9bi2U3mhqS?usp=sharing",
+  },
+  {
+    id: 8,
+    title: "Serverless URL Shortener",
+    description:
+      "Built a serverless URL shortener using Amazon API Gateway and AWS Lambda, handling URL creation and redirection workflows.",
+    image: "/urlSorthener.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ssoyeonisgood/url-shortner-cdk",
+    previewUrl: "https://github.com/ssoyeonisgood/url-shortner-cdk",
   },
 ];
 
@@ -99,7 +110,7 @@ const ProjectSection: React.FC = () => {
   };
 
   const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
+    project.tag.includes(tag),
   );
 
   const cardVariants = {

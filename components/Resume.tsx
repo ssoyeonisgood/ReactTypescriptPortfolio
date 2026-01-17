@@ -52,6 +52,11 @@ const experience = {
     "I have diverse work experience ranging from roles in the food and beverage industry to positions in software engineering. My journey includes working as a barista, sushi maker, and software assistant, giving me a well-rounded skill set and a strong work ethic.",
   items: [
     {
+      company: "Setsy",
+      position: "Software Engineer",
+      duration: "2026.01 - Present",
+    },
+    {
       company: "GT Engineering",
       position: "Office Administrator",
       duration: "2024.08 - 2025.02",
